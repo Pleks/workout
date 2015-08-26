@@ -1,8 +1,20 @@
 <component name="ArtifactManager">
-  <artifact type="war" name="Workout:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="JavaServerFaces.war">
-      <element id="artifact" artifact-name="Workout:war exploded" />
+  <artifact type="exploded-war" name="Workout:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/Workout_war</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Workout" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Hibernate 4.2.2-4.2.2" />
+          <element id="library" level="project" name="Spring-4.1.6.RELEASE" />
+          <element id="library" level="project" name="Spring MVC-4.1.6.RELEASE" />
+          <element id="file-copy" path="$PROJECT_DIR$/log4j-1.2.9.jar" />
+          <element id="library" level="project" name="mysql:mysql-connector-java:5.1.361" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="Workout/web/Web" />
     </root>
   </artifact>
 </component>
